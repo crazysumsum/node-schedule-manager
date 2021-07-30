@@ -65,6 +65,19 @@ if(!initResult.success) {
 ## Cron Syntax
 Schedule Manager use [node-cron](https://www.npmjs.com/package/node-cron) as job scheduler, so you can reference the Cron Syntax section of [node-cron](https://www.npmjs.com/package/node-cron) to learn how to write a correct cron job setting.
 
+```
+*    *    *    *    *    *
+┬    ┬    ┬    ┬    ┬    ┬
+│    │    │    │    │    │
+│    │    │    │    │    └ day of week (0 - 7) (0 or 7 is Sun)
+│    │    │    │    └───── month (1 - 12)
+│    │    │    └────────── day of month (1 - 31)
+│    │    └─────────────── hour (0 - 23)
+│    └──────────────────── minute (0 - 59)
+└───────────────────────── second (0 - 59, OPTIONAL)
+```
+
+
 ## Job Consumer
 You must create a job consumer for each job to implement your job logic, here is an example:
 
