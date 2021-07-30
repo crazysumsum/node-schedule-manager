@@ -1,0 +1,26 @@
+{
+  "name": "schedule-manager",
+  "version": "1.0.0",
+  "description": "A simple node schedule job manager for distributed system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazysumsum/node-schedule-manager.git"
+  },
+  "author": "Sam Wong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crazysumsum/node-schedule-manager/issues"
+  },
+  "homepage": "https://github.com/crazysumsum/node-schedule-manager#readme",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "ip": "^1.1.5",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "node-cron": "^3.0.0"
+  }
+}
