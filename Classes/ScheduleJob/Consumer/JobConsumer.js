@@ -7,11 +7,11 @@ class JobConsumer {
   }
 
   on(jobName) {
-    ScheduleJobEventBus.on('scheduleJob:' + jobName, this.run);
+    ScheduleJobEventBus.on('scheduleJob:' + jobName, (...args) => this.run(...args));
   }
 
   off(jobName) {
-    ScheduleJobEventBus.off('scheduleJob:' + jobName, this.run);
+    ScheduleJobEventBus.off('scheduleJob:' + jobName, (...args) => this.run(...args));
   }
 
   async complete(jobLog, result) {
